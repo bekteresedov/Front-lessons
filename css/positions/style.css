@@ -1,0 +1,29 @@
+body {
+  height: 3000px;
+}
+
+.ata {
+  margin-top: 40px;
+  background-color: blue;
+  width: 300px;
+  height: 2000px;
+  position: relative;
+}
+
+.ogul-1 {
+  height: 200px;
+  width: 200px;
+  color: antiquewhite;
+}
+
+.ogul-1 {
+  background-color: black;
+  left: 30px;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+/* .ogul-2 {
+  background-color: red;
+} */

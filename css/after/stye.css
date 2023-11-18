@@ -1,0 +1,18 @@
+ul {
+  display: flex;
+  list-style: none;
+}
+
+ul li {
+  margin-left: 5px;
+}
+
+ul li::after {
+  content: "|";
+  font-size: 10px;
+  margin-left: 4px;
+}
+
+.link-end::after {
+  content: "";
+}
