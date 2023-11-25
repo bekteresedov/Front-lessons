@@ -1,37 +1,78 @@
 body {
-  height: 1000px;
-  position: relative;
+  margin: 0;
+  padding: 0;
 }
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  color: #fff;
-  position: fixed;
+  background-color: #212d36;
+  position: sticky;
   z-index: 1;
   top: 0;
   left: 0;
-  width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
 }
 
 header ul {
   display: flex;
   list-style: none;
+  column-gap: 5px;
 }
 
 nav .nav-list li {
-  margin-right: 10px;
-  font-size: 13px;
+  font-size: 8px;
+  font-weight: bolder;
+  text-transform: uppercase;
 }
 
+nav .nav-list li::after {
+  content: "|";
+  font-size: 8px;
+  margin-left: 2px;
+}
+
+nav .nav-list li:last-child::after {
+  content: "";
+}
+nav .nav-list li:hover {
+  color: red;
+  transform: translateY(0.5px);
+  transition: all;
+}
 h2 {
   margin-left: 10px;
-  background-color: red;
+  background-color: rgb(0, 132, 255);
   padding: 10px 20px;
   border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
   font-size: 18px;
+}
+
+h2:hover {
+  background-color: red;
+  transition: 1s ease-in;
+}
+
+header button {
+  padding: 5px 10px;
+  font-size: 10px;
+  background-color: rgb(0, 132, 255);
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+}
+
+header button:hover {
+  background-color: red;
+  transform: translateY(1px);
+  transition: 1s ease-in;
 }
 
 .relative {
@@ -105,10 +146,175 @@ input {
   margin-bottom: 5px;
 }
 
-button {
+.div button {
   width: fit-content;
   background-color: red;
   color: #fff;
   padding: 5px 10px;
   border-radius: 10px;
+}
+
+main {
+  margin-top: 20px;
+}
+main .reklam {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  column-gap: 10px;
+}
+
+main .reklam .reklam-1,
+main .reklam .reklam-2 {
+  background-color: yellow;
+  height: 200px;
+  width: 100%;
+  font-size: 13px;
+  border-radius: 1px;
+  padding: 10px;
+  position: relative;
+}
+main .reklam .reklam-2 {
+  background-color: yellowgreen;
+}
+
+main .reklam button {
+  position: absolute;
+  top: 150px;
+  background-color: red;
+  color: #fff;
+  border: 0;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+main .reklam .reklam-1:hover,
+main .reklam .reklam-2 :hover {
+  transform: translateY(4px);
+  transition: 1s ease;
+}
+
+main .cards {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+main .cards .card {
+  height: 200px;
+  width: 150px;
+  border: 2px solid red;
+  position: relative;
+}
+
+main .cards .card img {
+  width: 100%;
+  height: 100%;
+}
+
+main .cards .card p {
+  font-size: 13px;
+  margin: 0;
+}
+
+main .cards .card span {
+  color: red;
+  font-weight: 900;
+  font-size: 13px;
+}
+
+main .cards .card button {
+  background-color: green;
+  color: #fff;
+  border: 0;
+  font-size: 10px;
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+.s {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  background-color: #bac1c7;
+  padding: 10px;
+  display: none;
+}
+
+.content p {
+  font-size: 10px;
+}
+
+.card:hover {
+  transform: translateY(5px);
+}
+.card:hover .content {
+  display: block;
+}
+
+footer {
+  background-color: #212d36;
+  padding: 15px;
+  margin-top: 80px;
+}
+
+footer .container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer .container ul {
+  list-style: none;
+  font-size: 13px;
+}
+
+footer .container li {
+  margin-top: 2px;
+  font-weight: 300;
+}
+
+header .hamburger {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  display: none;
+}
+
+header .hamburger span {
+  /* height: 10px; */
+  font-size: 2px;
+  width: 25px;
+  background-color: #fff;
+}
+@media (max-width: 768px) {
+  .reklam {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .reklam-2 {
+    order: -1;
+  }
+
+  header .nav-list {
+    display: none;
+  }
+  header button {
+    display: none;
+  }
+  header .hamburger {
+    display: flex;
+  }
+  footer .container {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
