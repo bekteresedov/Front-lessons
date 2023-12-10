@@ -1,0 +1,17 @@
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+}
+
+@media print and (max-width: 600px) and (min-width: 400px) {
+  .box1 {
+    background-color: black;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .box1 {
+    background-color: red;
+  }
+}

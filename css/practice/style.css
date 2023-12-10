@@ -42,7 +42,7 @@ nav .nav-list li:last-child::after {
 }
 nav .nav-list li:hover {
   color: red;
-  transform: translateY(0.5px);
+  transform: rotateY(0.5);
   transition: all;
 }
 h2 {
@@ -286,10 +286,15 @@ header .hamburger {
   flex-direction: column;
   row-gap: 4px;
   display: none;
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  z-index: 2333;
 }
 
 header .hamburger span {
   /* height: 10px; */
+
   font-size: 2px;
   width: 25px;
   background-color: #fff;
@@ -304,8 +309,34 @@ header .hamburger span {
     order: -1;
   }
 
-  header .nav-list {
+  .block {
+    display: block;
+  }
+  header nav {
     display: none;
+  }
+  .alma {
+    /* display: none; */
+    position: absolute;
+    background-color: #bac1c7;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+  }
+  nav .nav-list li:after {
+    content: "";
+  }
+  header nav .nav-list {
+    margin-top: 70px;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  header nav .nav-list li {
+    font-size: 20px;
+    margin-right: 5px;
+    margin-bottom: 10px;
   }
   header button {
     display: none;
