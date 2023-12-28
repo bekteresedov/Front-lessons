@@ -1,4 +1,5 @@
-var alma = "Eilvin";
+var alma = "Elvin";
+
 // console.log(alma[1]);
 // ["E", "l", "v", "i", "n"];
 
@@ -15,4 +16,12 @@ var alma = "Eilvin";
 
 // console.log(alma.repeat(3));
 
-console.log(alma.replaceAll("i", "o"));
+// console.log(alma.replaceAll("i", "o"));
+
+// console.log(alma.trimEnd());
+// console.log(alma.trimStart());
+// console.log(alma.trim());
+
+console.log(alma.toLowerCase());
+console.log(alma.toUpperCase());
+console.log(alma.substring(1, 3));
