@@ -16,12 +16,21 @@
 
 // alert(topla(5));
 
-// var isPrime = (number) => {
-//   for (let index = 2; index < number; index++) {
-//     if (number % index === 0) return true;
-//   }
-//   return false;
-// };
+var isPrime = (number) => {
+  for (let index = 2; index < number; index++) {
+    if (number % index === 0) return true;
+  }
+  return false;
+};
+
+var array = [];
+for (let i = 0; i <= 12; i++) {
+  if (isPrime(i)) {
+    array.push(i);
+  }
+}
+
+alert(array);
 
 // var isPrime = (number) => {
 //   var result = false;

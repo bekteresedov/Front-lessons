@@ -45,6 +45,6 @@ var array = [4, 5, 7, 8];
 
 // function test(a, b = 1) {}
 
-var alma = (array) => array.filter((el) => String(el).length % 2 == 0).length;
+// var alma = (array) => array.filter((el) => String(el).length % 2 == 0).length;
 
-console.log(alma([122, 232, 1234, 3223]));
+// console.log(alma([122, 232, 1234, 3223]));
