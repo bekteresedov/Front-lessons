@@ -221,3 +221,12 @@
 // updateOneEmployee(id,updateEmployee)
 // deleteOneEmployee(id)
 // getOneEmployee(id)
+
+// {
+//     success:true,
+//     message:"Employee  found!",
+//     data:{
+
+//     }
+
+// }
