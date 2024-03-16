@@ -1,0 +1,70 @@
+/** @format */
+@import url("../doms/to_do_list/reset.css");
+body {
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+.container {
+  margin: auto;
+  width: 400px;
+}
+
+.task-add {
+  margin-top: 150px;
+  border: solid 2px gray;
+  border-radius: 10px;
+  padding: 20px 15px 25px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.input {
+  width: 250px;
+  border-radius: 5px;
+  padding: 10px 6px;
+  font-size: 11px;
+  background-image: linear-gradient(
+    to top,
+    #1e3c72 0%,
+    #1e3c72 1%,
+    #2a5298 100%
+  );
+  color: white;
+}
+.btn-add {
+  border-radius: 5px;
+  padding: 5px 18px;
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  color: white;
+}
+.task-list-body {
+  border: solid 2px gray;
+  border-radius: 10px;
+  padding: 20px 15px 30px;
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 2.5px gray;
+  padding: 10px 5px;
+  color: white;
+}
+
+.line-center {
+  text-decoration-line: line-through;
+}
+
+body {
+  background-color: aqua;
+}

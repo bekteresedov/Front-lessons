@@ -1,17 +1,51 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Simple To Do List</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="./index.js" defer></script>
   </head>
-  <style>
-    .test {
-      color: blue;
-    }
-  </style>
   <body>
-    <ul></ul>
+    <h2 onclick="">Hello</h2>
+    <main class="container">
+      <div class="task-add">
+        <input
+          id="input"
+          type="text"
+          class="input"
+          placeholder="Task to be done"
+        />
+        <button id="add" class="btn-add">Add</button>
+      </div>
+
+      <div class="task-list-body">
+        <ul class="task-list">
+          <!-- <li class="list">
+            <p class="line-center">read books</p>
+            <i class="fa-solid fa-trash-can"></i>
+          </li>
+          <li class="list">
+            <p>Revise lessons</p>
+            <i class="fa-solid fa-trash-can"></i>
+          </li>
+          <li class="list">
+            <p>New task</p>
+            <i class="fa-solid fa-trash-can"></i>
+          </li> -->
+        </ul>
+      </div>
+    </main>
   </body>
 </html>
