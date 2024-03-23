@@ -1,0 +1,80 @@
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+body {
+  font-family: "Dancing Script", cursive;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-title {
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 40px;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 18px;
+  font-weight: bolder;
+  color: darkslateblue;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  outline: none;
+  padding: 8px;
+  width: 250px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.error-message {
+  color: red;
+  font-size: 15px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.form-hidden {
+  position: absolute;
+  top: 33px;
+  right: 8px;
+  font-size: 12px;
+}
+
+.form-register {
+  margin-top: 12px;
+  padding: 8px 10px;
+  background-color: green;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bolder;
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.form-register:hover {
+  background-color: black;
+  transition: 1s ease-in;
+}
+
+.right {
+  float: right;
+}

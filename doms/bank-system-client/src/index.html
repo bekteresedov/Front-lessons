@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" defer src="./js/index.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="form-container">
+        <h2 class="form-title">Register</h2>
+        <form action="" class="form-main">
+          <div class="input-container">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" type="text" id="name" name="name" />
+            <p class="error-message" id="error-name"></p>
+          </div>
+          <div class="input-container">
+            <label class="form-label" for="surname">Surname</label>
+            <input class="form-input" type="text" id="surname" name="surname" />
+            <p class="error-message" id="error-surname"></p>
+          </div>
+          <div class="input-container password-container">
+            <label class="form-label" for="password">Password</label>
+            <input
+              class="form-input"
+              type="password"
+              id="password"
+              name="password"
+            />
+            <p class="error-message" id="error-password"></p>
+            <i class="fa-regular fa-eye form-hidden"></i>
+          </div>
+          <div class="input-container">
+            <label class="form-label" for="repeat-password"
+              >Repeat Password</label
+            >
+            <input
+              type="password"
+              id="repeat-password"
+              name="repeatPassword"
+              class="form-input"
+            />
+            <p class="error-message" id="error-repeat"></p>
+          </div>
+          <div class="button-container">
+            <button type="submit" class="form-register">Register</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

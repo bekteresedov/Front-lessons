@@ -7,27 +7,28 @@ const data = [
   {
     id: 2,
     name: "test1",
-    price: 20,
+    price: 10,
   },
   {
     id: 3,
     name: "test2",
-    price: 20,
+    price: 30,
   },
-  {
-    id: 4,
-    name: "test3",
-    price: 20,
-  },
+
   {
     id: 5,
     name: "test4",
-    price: 20,
+    price: 100,
   },
   {
     id: 6,
     name: "test",
     price: 20,
+  },
+  {
+    id: 4,
+    name: "test3",
+    price: 90,
   },
 ];
 
@@ -52,4 +53,19 @@ button.addEventListener("click", () => {
   //   return;
   // }
   render(fake);
+});
+
+const sort = document.querySelector("#sort");
+sort.addEventListener("change", (e) => {
+  let fakeData = [...data];
+
+  if (e.target.value == "asc") {
+    fakeData.sort((a, b) => a.price - b.price);
+    render(fakeData);
+  } else if (e.target.value == "desc") {
+    fakeData.sort((a, b) => b.price - a.price);
+    render(fakeData);
+  } else {
+    render(data);
+  }
 });
