@@ -1,6 +1,7 @@
 @import url("./reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
-
+@import url("../components/input.css");
+@import url("../components/button.css");
 body {
   font-family: "Dancing Script", cursive;
 }
@@ -34,11 +35,7 @@ body {
 }
 
 .form-input {
-  outline: none;
-  padding: 8px;
   width: 250px;
-  border-radius: 5px;
-  font-size: 12px;
 }
 
 .error-message {
@@ -57,24 +54,23 @@ body {
   font-size: 12px;
 }
 
-.form-register {
+.form-button {
   margin-top: 12px;
-  padding: 8px 10px;
   background-color: green;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 10px;
-  font-weight: bolder;
-  border: 0;
-  border-radius: 7px;
-  cursor: pointer;
 }
 
-.form-register:hover {
+.form-button:hover {
   background-color: black;
   transition: 1s ease-in;
 }
 
 .right {
   float: right;
+}
+
+.form-link {
+  color: green;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
 }

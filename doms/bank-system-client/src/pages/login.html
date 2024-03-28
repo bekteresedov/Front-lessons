@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
-    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -12,27 +12,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script type="module" defer src="./js/index.js"></script>
+    <script src="../js/login.js" defer type="module"></script>
   </head>
   <body>
     <main>
       <div class="form-container">
-        <h2 class="form-title">Register</h2>
+        <h2 class="form-title">Login</h2>
         <form action="" class="form-main">
           <div class="input-container">
             <label class="form-label" for="name">Name</label>
             <input class="form-input input" type="text" id="name" name="name" />
             <p class="error-message" id="error-name"></p>
-          </div>
-          <div class="input-container">
-            <label class="form-label" for="surname">Surname</label>
-            <input
-              class="form-input input"
-              type="text"
-              id="surname"
-              name="surname"
-            />
-            <p class="error-message" id="error-surname"></p>
           </div>
           <div class="input-container password-container">
             <label class="form-label" for="password">Password</label>
@@ -45,24 +35,14 @@
             <p class="error-message" id="error-password"></p>
             <i class="fa-regular fa-eye form-hidden"></i>
           </div>
-          <div class="input-container">
-            <label class="form-label" for="repeat-password"
-              >Repeat Password</label
-            >
-            <input
-              type="password"
-              id="repeat-password"
-              name="repeatPassword"
-              class="form-input input"
-            />
-            <p class="error-message" id="error-repeat"></p>
-          </div>
-          <a href="./pages/login.html " class="form-link">
-            Daha bonceden hesabiniuz var mi?</a
+          <a href="../index.html " class="form-link">
+            Hesab yartmaq isteyirsiniz?</a
           >
+          <p class="error-message" id="error-server"></p>
+
           <div class="button-container">
-            <button type="submit" class="form-button form-register button">
-              Register
+            <button type="submit" class="form-button form-login button">
+              Login
             </button>
           </div>
         </form>

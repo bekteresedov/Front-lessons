@@ -69,4 +69,16 @@ formRegisterBtn.addEventListener("click", (e) => {
   } else {
     errorRepeatPassword.innerHTML = "";
   }
+
+  if (
+    nameResult.success &&
+    passwordResult.success &&
+    repeatPasswordResult.success &&
+    surnameResult.success
+  ) {
+    localStorage.setItem("name", name.value.trim());
+    localStorage.setItem("password", password.value.trim());
+
+    window.location.href = "./pages/login.html";
+  }
 });
