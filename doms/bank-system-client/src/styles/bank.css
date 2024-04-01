@@ -1,6 +1,85 @@
 @import url("./reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 @import url("../components/header.css");
+@import url("../components/input.css");
+@import url("../components/button.css");
+
 body {
   font-family: "Dancing Script", cursive;
+}
+
+.main {
+  display: flex;
+}
+main aside ul {
+  background-color: rgb(24, 207, 158);
+  width: 150px;
+  height: 80vh;
+  padding-top: 50px;
+}
+main aside ul li {
+  margin-top: 10px;
+  display: flex;
+  column-gap: 10px;
+  padding: 0 20px;
+}
+
+main aside ul li i {
+  color: rgb(41, 40, 37);
+  font-size: 25px;
+}
+
+main aside ul li p {
+  color: rgb(41, 40, 37);
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.view {
+  background-color: rgb(28, 70, 108);
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.content h2,
+.content h4 {
+  color: #fff;
+}
+
+.content h2 {
+  font-size: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.content h4 {
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.operation-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+.operation-content button {
+  background-color: chocolate;
+}
+.my-balance {
+  display: flex;
+  column-gap: 5px;
+  color: #fff;
+  background-color: brown;
+  padding: 5px;
+  border-radius: 10px;
+  position: fixed;
+  right: 0;
 }
