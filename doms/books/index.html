@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" defer src="./index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="head-container">
+        <h2>Logo</h2>
+        <div class="card">
+          <i style="color: red" class="fa-solid fa-basket-shopping"></i>
+          <sup style="color: aliceblue"></sup>
+        </div>
+      </div>
+    </header>
+    <main class="m">
+      <div class="basket">
+        <h2>Baket</h2>
+        <ul class="card-list">
+          <li>
+            <img
+              src="https://static.insales-cdn.com/images/products/1/2229/228329653/0000000433607-1.jpg"
+              alt=""
+            />
+            <span>2x</span>
+            <span>300$</span>
+            <button>x</button>
+          </li>
+        </ul>
+        <div class="total">total:0</div>
+      </div>
+      <section class="filter-sec">
+        <select name="" id="filter">
+          <option value="All">All</option>
+        </select>
+      </section>
+      <div class="container">
+        <h1>A list of books</h1>
+        <br />
+        <div id="list-th" class="book-list"></div>
+      </div>
+    </main>
+  </body>
+</html>

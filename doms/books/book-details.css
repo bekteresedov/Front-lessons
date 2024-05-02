@@ -1,0 +1,24 @@
+.main {
+  width: 90%;
+  margin: 0 auto;
+}
+.main section {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.main section img {
+  width: 300px;
+  height: auto;
+}
+
+.back {
+  color: red;
+  background-color: transparent;
+  border: 0;
+  font-size: 30px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
