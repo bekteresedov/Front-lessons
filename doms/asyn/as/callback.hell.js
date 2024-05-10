@@ -27,45 +27,35 @@
 //   });
 // });
 
-const users = [
-  {
-    id: 1,
-    name: "John",
-  },
-  {
-    id: 2,
-    name: "John 2",
-  },
-];
+// function step1() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("Step 1 completed");
+//       resolve();
+//     }, 1000);
+//   });
+// }
 
-const posts = [
-  {
-    userId: 2,
-    posts: [
-      {
-        id: 1,
-        text: "John",
-      },
-      {
-        id: 1,
-        text: "John",
-      },
-    ],
-  },
-];
+// function step2() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("Step 2 completed");
+//       resolve();
+//     }, 1000);
+//   });
+// }
 
-const getUser = (id, getPost) => {
-  setTimeout(() => {
-    const user = users.find((u) => u.id == id);
-    getPost(user.id);
-  }, 3000);
-};
+// function step3() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("Step 3 completed");
+//       resolve();
+//     }, 1000);
+//   });
+// }
 
-const getPost = (id) => {
-  setTimeout(() => {
-    const user = posts.find((p) => p.userId == id);
-    console.log(user);
-  }, 4000);
-};
-
-getUser(1);
+// step1()
+//   .then(() => step2())
+//   .then(() => step3())
+//   .then(() => console.log("All steps completed"))
+//   .catch((error) => console.error(error));

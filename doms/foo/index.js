@@ -78,3 +78,11 @@
 // console.log(user2);
 // const string = JSON.stringify(user);
 // console.log(JSON.parse(string));
+
+class MyError extends Error {
+  constructor(message, statusCode) {
+    super(message);
+    this.statusCode = statusCode;
+  }
+}
+throw new MyError("Invalid", 501);
