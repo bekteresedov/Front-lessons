@@ -31,13 +31,13 @@ findUser(2)
   .then((armud) => {
     return armud[0];
   })
-  .then((name) => {
-    ul.innerHTML = `<h1>${name}</h1>`;
+  .then((b) => {
+    ul.innerHTML = `<h1>${b}</h1>`;
   })
   .catch((err) => {
     ul.innerHTML = `<h1>Error ${err}</h1>`;
   })
-  .finally((aaaa) => {
+  .finally(() => {
     console.log("men her zaman isleyirem");
     // ul.innerHTML = "";
   });

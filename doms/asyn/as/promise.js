@@ -34,13 +34,6 @@ const addUser = (newUser) => {
 addUser({
   id: 3,
   name: "John 4",
-})
-  .then(() => {
-    render();
-  })
-  .catch((error) => {
-    console.error("Error adding user:", error);
-  })
-  .finally(() => {
-    console.log("ok");
-  });
+}).then(() => {
+  render();
+});
