@@ -1,38 +1,5 @@
-const url = "http://localhost:3000";
-
-fetch(url)
-  .then((response) => {
-    return response.json();
-  })
-  .then((result) => {
-    const tbody = document.querySelector("tbody");
-    tbody.innerHTML = result.data.map((user) => {
-      const { _id, fullname, email, password, address } = user;
-      const { city, country } = address;
-      return `<tr>
-      <td>${_id.slice(10, 15)}</td>
-      <td>${email}</td>
-      <td>${fullname}</td>
-      <td>${password}</td>
-      <td>${city}</td>
-      <td>${country}</td>
-      <td>
-      <button data-id="${_id}" class="delete">delete</button>
-      <button>edit</button>
-      </td>
-    </tr>`;
-    });
-
-    const deleteBtns = document.querySelectorAll(".delete");
-    deleteBtns.forEach((element) => {
-      element.addEventListener("click", () => {
-        handleDelete(element.getAttribute("data-id"));
-      });
-    });
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+import { GET, POST } from "../utils/httpService.js";
+import { renderUserList } from "../utils/view.js";
 
 const newUserBtn = document.querySelector(".new-user-btn");
 newUserBtn.addEventListener("click", () => {
@@ -60,39 +27,14 @@ submitBtn.addEventListener("click", (e) => {
       country: country.value,
     },
   };
-  fetch(url, {
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(user),
-  })
-    .then((response) => {
-      return response.json();
-    })
-    .then((result) => {
-      console.log(result);
-    })
-    .catch((error) => {
-      console.log(error);
-    });
-});
 
-const handleDelete = (id) => {
-  fetch(`${url}/${id}`, {
-    method: "DELETE",
-  })
-    .then((response) => {
-      return response.json();
-    })
-    .then((result) => {
-      if (result.success) {
-        // render()
-      }
-      console.log(result);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-};
+  POST("/", user).then((response) => {
+    if (!response.succes) alert(response.message);
+  });
+});
+GET().then((response) => {
+  const { succes, data } = response;
+  if (succes) {
+    renderUserList(data);
+  }
+});
