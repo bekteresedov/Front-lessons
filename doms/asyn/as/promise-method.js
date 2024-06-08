@@ -1,21 +1,21 @@
 // promise all method
-// const getUsers = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     resolve("User List");
-//   }, 1000);
-// });
+const getUsers = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("User List");
+  }, 1000);
+});
 
-// const getPosts = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     resolve("Post List");
-//   }, 2000);
-// });
+const getPosts = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Post List");
+  }, 2000);
+});
 
-// const getComments = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     resolve("Comment List");
-//   }, 3000);
-// });
+const getComments = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Comment List");
+  }, 3000);
+});
 
 // getUsers.then((s) => {
 //   console.log(s);
@@ -36,23 +36,23 @@
 
 // promise race method
 
-const getUsers = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("User List");
-  }, 1000);
-});
+// const getUsers = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("User List");
+//   }, 1000);
+// });
 
-const getPosts = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("Post List");
-  }, 2000);
-});
+// const getPosts = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("Post List");
+//   }, 2000);
+// });
 
-const getComments = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("Comment List");
-  }, 3000);
-});
+// const getComments = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("Comment List");
+//   }, 3000);
+// });
 
 Promise.race([getUsers, getComments, getPosts])
   .then((results) => {
