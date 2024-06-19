@@ -36,7 +36,7 @@ function alma(){
   }
 }
 
-
-const alma=()=>{
+alma()
+ alma=()=>{
   console.log("alma");
 }

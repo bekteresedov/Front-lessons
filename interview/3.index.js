@@ -14,3 +14,4 @@ John2.name = "John2";
 John2.address.city = "Antalya";
 
 console.log(John);
+console.log(John2);

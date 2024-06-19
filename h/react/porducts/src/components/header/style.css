@@ -1,0 +1,13 @@
+header {
+  background-color: black;
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  column-gap: 10px;
+}

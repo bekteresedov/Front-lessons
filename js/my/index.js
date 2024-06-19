@@ -43,16 +43,33 @@
 // for (let index = 2; index < 20; index += 2) {
 //   count++;
 // }
+ss;
+// // console.log(count);
+// const result = document.querySelector("#result");
+// const inp = document.querySelector("#number");
+// const btn = document.querySelector("#onclick");
 
-// console.log(count);
-const result = document.querySelector("#result");
-const inp = document.querySelector("#number");
-const btn = document.querySelector("#onclick");
+// var sum = (start, topla) => {
+//   return start == 0 ? topla : sum(start - 1, topla + start);
+// };
+// btn.addEventListener("click", () => {
+//   result.innerHTML = sum(Number(inp.value), 0);
+//   inp.value = result.innerHTML;
+// });
 
-var sum = (start, topla) => {
-  return start == 0 ? topla : sum(start - 1, topla + start);
-};
-btn.addEventListener("click", () => {
-  result.innerHTML = sum(Number(inp.value), 0);
-  inp.value = result.innerHTML;
-});
+function alma() {
+  console.log("alma");
+}
+
+function armud() {
+  console.log("armud");
+}
+alma();
+
+setTimeout(() => {
+  console.log(":wergwe");
+}, 1000);
+
+fetch("fewouwrgoger");
+
+armud();

@@ -16,4 +16,4 @@ if (NaN) {
   console.log("nan isn't true value");
 }
 
-// 0,false undefined adn etc..
+// 0,false undefined and etc..
