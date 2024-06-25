@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <>
       <main>
-        <Product />
+        <Product a={"a"} b={"a"} />
         <Product />
         <Product />
         <Product />

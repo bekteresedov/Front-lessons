@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
-const Product = () => {
+const Product = (props) => {
+  console.log(props.a);
   return (
     <>
       <div className="product">

@@ -7,7 +7,7 @@ const John = {
   },
 };
 
-const John2 = John;
+const John2 = JSON.parse(JSON.stringify(John));
 
 John2.name = "John2";
 
