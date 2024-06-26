@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.css";
-import Logo from "../logo/logo";
 import NavList from "../nav/nav-list";
+import Logo from "../logo/logo";
 const Header = () => {
   return (
     <>
-      <header className="header">
-        <Logo>Alma</Logo>
+      <header>
+        <Logo />
         <NavList />
       </header>
     </>

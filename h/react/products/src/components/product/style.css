@@ -1,0 +1,17 @@
+.product-list {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.product-item {
+  width: 250px;
+  border: 1px solid black;
+}
+
+img {
+  width: 100%;
+  height: 200px;
+}
